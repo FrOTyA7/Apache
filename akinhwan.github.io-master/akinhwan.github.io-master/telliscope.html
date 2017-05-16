@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Telliscope Case Study</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Favicons -->
+<link rel="shortcut icon" href="./img/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="./img/favicon.png">
+<!-- Google fonts styles -->
+<link rel="stylesheet" id="google-fonts-Roboto-css" href="http://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;ver=3.9.1" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<!-- Aside styles -->
+<link rel="stylesheet" id="bootstrap-css" href="./styles/bootstrap.css" type="text/css" media="screen">
+<link rel="stylesheet" id="font-awesome-css" href="./styles/font-awesome.min.css" type="text/css" media="screen">
+<link rel="stylesheet" id="pagebuild-css" href="./styles/pagebuild.css" type="text/css" media="screen">
+<link rel="stylesheet" id="ux-aside-css" href="./styles/style.css" type="text/css" media="screen">
+<link rel="stylesheet" id="icons-css" href="./styles/icons.css" type="text/css" media="screen">
+<!-- Jquery Lib version 1.11.0 -->
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<!-- Google Analytics Tracking -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74378318-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- IE hack -->
+<!--[if lte IE 9]>
+<link rel='stylesheet' id='cssie'  href='./styles/ie.css' type='text/css' media='screen' />
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/ie.js"></script>
+<link rel='stylesheet' id='cssie8'  href='./styles/ie8.css' type='text/css' media='screen' />
+<![endif]-->
+<!--[if lte IE 7]>
+<div style="width: 100%;" class="messagebox_orange">Your browser is obsolete and does not support this webpage. Please use newer version of your browser or visit <a href="http://www.ie6countdown.com/" target="_new">Internet Explorer 6 countdown page</a>  for more information. </div>
+<![endif]-->
+</head>
+<body class="home page single responsive-ux boxed-line aside-layout-ux">
+<!-- Page Loading -->
+<div class="page-loading visible">
+<div class="page-loading-inn">
+<div class="page-loading-transform">
+<div class="ux-loading"></div>
+<div class="ux-loading-transform">
+<div class="loading-dot1">&nbsp;</div>
+<div class="loading-dot2">&nbsp;</div>
+</div>
+<div class="site-loading-logo centered-ux">A UX Case Study...</div>
+</div>
+</div>
+</div>
+<!-- Jplayer -->
+<div id="jquery_jplayer" class="jp-jplayer"></div>
+<!--Mobild Header meta-->
+<div id="mobile-header-meta">
+<!--Search Form-->
+<form id="search_form" name="" method="get" class="search-form_header" action="http://ximudesign.com/aside/">
+<input type="text" onblur="if (this.value == '') {this.value = 'SEARCH';}" onfocus="if (this.value == 'SEARCH') {this.value = '';}" id="s" name="s" value="SEARCH" class="textboxsearch">
+<span class="submit-wrap">
+<input type="submit" value="" class="submitsearch" name="submitsearch">
+<i class="fa fa-long-arrow-right middle-ux"></i>
+</span>
+</form>
+<!--Social icons-->
+<div class="social-icons-sidebar">
+<a class="icons-sidebar-unit" href="https://www.linkedin.com/in/akinhwan" title="Follow me"><i class="fa fa-linkedin-square"></i></a>
+<a class="icons-sidebar-unit" href="https://twitter.com/akinhwan" title="Follow me"><i class="fa fa-twitter-square"></i></a>
+<a class="icons-sidebar-unit" href="https://www.pinterest.com/andrewikim/" title="Follow me"><i class="fa fa-pinterest-square"></i></a>
+<a class="icons-sidebar-unit" href="https://www.google.com/+andrewkiminhwan" title="Follow me"><i class="fa fa-google-plus-square"></i></a>
+<a class="icons-sidebar-unit" href="https://www.instagram.com/akinhwan" title="Follow me"><i class="fa fa-instagram"></i></a>
+<a class="icons-sidebar-unit" href="https://vimeo.com/akinhwan" title="Follow me"><i class="fa fa-vimeo-square"></i></a>
+<a class="icons-sidebar-unit" href="https://soundcloud.com/akinhwan" title="Follow me"><i class="fa fa-soundcloud"></i></a>
+</div>
+<div class="mobile-meta-con">
+<div class="copyright">Copyright akinhwan.com</div>
+</div>
+<!--End header-info-mobile-->
+</div>
+<!--End mobile-header-meta-->
+<div id="wrap">
+<!--Sidaber-->
+<aside id="sidebar" class="sidebar_hide">
+<div id="sidebar-trigger">
+<div class="menu-icon"><i class="icon-m-menu"></i></div>
+</div>
+<!--End sidebar-trigger-->
+<div class="sidebar-main">
+
+<!--Logo-->
+<h1 id="logo"><a href="index.html" title="Andrew Inhwan Kim's Portfolio">A. I. K.</a></h1>
+<!--Menu-->
+<nav id="navi" class=" clearfix">
+<div id="navi_wrap" class="menu-demo-menu-container">
+<ul class="menu">
+<li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="index.html">PORTFOLIO</a></li>
+<li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="about.html">ABOUT</a></li>
+<li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="blog.html">BLOG</a></li>
+<li id="menu-item-888" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="resources.html">RESOURCES</a></li>
+</ul>
+</div>
+<!--End #navi_wrap-->
+</nav>
+<!-- End Menu -->
+<div class="sidebar-bottom-wrap">
+<form id="search_form_1" name="" method="get" class="search-form_header" action="#">
+<input type="text" onblur="if (this.value == '') {this.value = 'SEARCH';}" onfocus="if (this.value == 'SEARCH') {this.value = '';}" id="search" name="search" value="SEARCH" class="textboxsearch">
+<span class="submit-wrap"><input type="submit" value="" class="submitsearch" name="submitsearch"><i class="fa fa-long-arrow-right middle-ux"></i></span>
+</form>
+<!--Social icons-->
+<div class="social-icons-sidebar">
+<a class="icons-sidebar-unit" href="https://www.linkedin.com/in/akinhwan" title="Follow me"><i class="fa fa-linkedin-square"></i></a>
+<a class="icons-sidebar-unit" href="https://twitter.com/akinhwan" title="Follow me"><i class="fa fa-twitter-square"></i></a>
+<a class="icons-sidebar-unit" href="https://www.pinterest.com/andrewikim/" title="Follow me"><i class="fa fa-pinterest-square"></i></a>
+<a class="icons-sidebar-unit" href="https://www.google.com/+andrewkiminhwan" title="Follow me"><i class="fa fa-google-plus-square"></i></a>
+<a class="icons-sidebar-unit" href="https://www.instagram.com/akinhwan" title="Follow me"><i class="fa fa-instagram"></i></a>
+<a class="icons-sidebar-unit" href="https://vimeo.com/akinhwan" title="Follow me"><i class="fa fa-vimeo-square"></i></a>
+<a class="icons-sidebar-unit" href="https://soundcloud.com/akinhwan" title="Follow me"><i class="fa fa-soundcloud"></i></a>
+</div>
+<!--End Social icons-->
+<div class="copyright">Copyright akinhwan.com</div><!--End copyright-->
+</div>
+<!--END sidebar-bottom-wrap-->
+</div>
+<!--end sidebar-main-->
+</aside>
+<!--Header-->
+<header id="header" class="">
+<h1 id="logo-mobile"><a href="index.html" title="Andrew Inhwan Kim's Portfolio">A. I. K.</a></h1>
+</header>
+<!--End Header-->
+<!--#main-wrap-->
+<div id="main-wrap">
+<div id="main" style="-webkit-transform-origin: 50% 665px;">
+<div id="content">
+<div id="post-8" class="post-8 post type-post status-publish format-gallery has-post-thumbnail hentry category-branding category-portfolio category-uncategorized tag-branding-2 tag-graphic-design">
+<div id="content_wrap" class="">
+<div class="row-fluid gallery-wrap gallery-wrap-fullwidth ">
+<div class="gallery-images-wrap ">
+<div class="row-fluid ">
+<a name="toc"></a>
+<div class="clear gallery-post-wrap">
+<div class="fullwrap_moudle">
+<div class="fullwidth-wrap top-space-80-in bottom-space-40-in fullwidth-text-white">
+<div class="parallax" data-ratio=".5"><img class="parallax-img" src="img/telliscope/landing.png"></div>
+<div class="post-meta">
+<span class="post-meta-unit date">Duration: 2 months</span>
+<span class="post-meta-unit tag">Tags: <a href="http://ximudesign.com/aside/tag/branding-2/" rel="tag">Branding</a>, <a href="http://ximudesign.com/aside/tag/graphic-design/" rel="tag">UX Design</a></span>
+</div>
+</div>
+</div>
+</div>
+<!--End #title-wrap-->
+</div>
+<!--End #title-bar-wrap"-->
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- start content  -->
+<div class="row-fluid">
+<div class="entry span8">
+<h2><a href="https://telliscope.com/">Telliscope LLC</a> is a startup within the <a href="http://www.1776.vc/">1776 Incubator</a>, founded by Mellena Haile and Jon Hersh. They offer a platform for entrepreneurs, organizations, and investors to stay up to date on happenings in their community and to form fruitful partnerships with one another.</h2>
+<br><br>
+<p><h3><b>The Problem</b></h3>
+<h6>From the outset this was a unique problem because of its relative infancy in development and previous baggage it brought to the table. There were previous designs done in a variety of forms, but mainly in word documents, and in Axure. Such a starting point may have been more of a con than a pro but it framed the initial conversation and gave a precedent to immediately start comparing early ideas with. Visual design aside, what I viewed as the main problem was consistency across the page layouts, and a lack of clarity in arriving at what a given page was for. The feeling was that there wasn't enough activity reflecting the social component of the platform, and the look was unimaginative and dull.  Some things could be addressed with updated and modern patterns for basic navigation and layout design, but the more subtle gut reactions one got from using the platform were to be remedied along the process. </h6></p>
+</div>
+<!-- side text -->
+<ul class="gallery-info-property span4">
+    <br><br>
+<li>
+<span class="gallery-info-property-tit">Team:</span>
+<span><a href="http://www.akinhwan.com">Andrew I. Kim</a></span>
+</li>
+<li>
+<span class="gallery-info-property-tit date">Duration: </span>
+<span>2 months</span>
+</li><br>
+<li>
+<span class="gallery-info-property-tit">Tools:</span>
+<span><a href="https://uxpin.com/">UX Pin</a>, <a href="http://www.axure.com">Axure</a>, <a href="http://www.bohemiancoding.com">Sketch</a>, <a href="http://www.google.com/hangouts">Google Hangouts</a>, <a href="http://www.marvelapp.com">Marvel</a>, <a href="http://www.slack.com">Slack</a>, <a href="http://www.trello.com">Trello</a>, <a href="http://www.adobe.com/photoshop">Adobe Photoshop</a>, <a href="http://www.evernote.com">Evernote</a>, <a href="http://www.skype.com">Skype</a>, <a href="http://www.post-it.com/">Postit Notes, <a href="https://www.sharpie.com">Sharpies, <a href="http://www.prismacolor.com">PrismaColor</a></span>
+</li><br>
+<li>
+<span class="gallery-info-property-tit tag">Role: </span>
+<span>Information Architecture, Personas, Competitive Analysis, Sketching, Wireframing, Prototyping, Branding & Identity</span>
+</li><br>
+<li>
+<span class="gallery-info-property-tit date">Location: </span>
+<span>Alexandria, Crystal City</span>
+</li>
+<li>
+<span class="gallery-info-property-tit date">Tags: </span>
+<span>Web, UX/UI, Branding</span>
+</li>
+<br>
+<li>
+<span class="gallery-info-property-tit date"> Table of Contents: </span>
+<a href="#I">I. Strategy & Goal</a><br>
+<a href="#II">II. Research</a><br>
+<a href="#III">III. Ideation</a><br>
+<a href="#IV">IV. Iteration</a><br>
+<a href="#V">V. Finalization</a>
+</li>
+</ul>
+</div>
+<h3><b><a name="I">Strategy & Goal</a></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href= "#toc">↑</a> </h3>
+<div class="row-fluid">
+<div class="entry span8">
+<img class="vertical-list-img" src="img/telliscope/whiteboard.png" title="Whiteboard" >
+</div>
+<div class="entry span4">
+<h6>
+From the design perspective, almost anything could atleast be imagined, however knowing the result of the design may be bigger than one could chew, only the key features were to be fleshed out for this newest prototype. The end result of this project was to be in a fully interactive, responsive, and functional prototype that felt and looked like the real thing as far as the unsuspecting viewer knew but didn't have any backend support.
+<br><br>
+The way that Telliscope was pitched to me had to be re-pitched back to the client in a way that prioritized the user ecosystem. Clearly every feature of the platform could be distilled into how and why the Entrepreneur, Resource Partner, or Investor might use the site.
+<br><br>
+The goal was to take the ideas that were hinted at in previous versions and take them a bit further into fully formed ideas. Ofcourse making everything pixel perfect and giving it a professional polish was expected of any product in the current marketplace, Africa or otherwise. We would also take ideas that were completely missing from the original and introduce them, and justify why there was a need for them in the new version. Finally, we would find ideas that could be realized for the new version that are not going to be designed anyways, but are still important to expand the scope to what can't be done either for future reference or as a barometer for realized concepts.</h6>
+</div>
+</div>
+<!-- RESEARCH -->
+<h3><b><a name="II">Research</a></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href= "#toc">↑</a> </h3>
+<div class="row-fluid">
+<div class="entry span10">
+<h6>
+<p>
+We began with a company debrief in person at a conference room on the 10th floor of the Vornado building in Crystal City. I took copious notes as to the aspirations of the company that Mellena had in mind. It was clear to me that there was a tremendous amount of thought and care that had already been invested in the project and proceeded with caution. From her own marketing research, there was a vacancy in the field of business networking solutions in Eastern Sub-Saharan Africa. Many entrepreneurs were coming up with innovative and progressive ideas to revolutionize their respective fledgling economies, but were invisible to the world wide investor pool. On the other side of the token, many investors we spoke with were interested in investing in these communities, but were far-away and hesitant without a proper introduction to some of the grassroots movements. The main concern on the Entrepreneur side was Awareness and Opportunity, and for Investors was Risk and Misinformation. There had to be created a window between these parties to ensure at least a chance to exist for furthering relations and realizing dreams.
+</p>
+<br><br>
+Some of the insights are not necessarily epiphanous per say for the client, but are articulated in such a way as to resonate and inform further decisions that were not the norm before. This small difference in the mindset can impact the strategic long term plan for the company and product for the better. There may be a constantly revolving door of issues and logistics for the founder, but knowing who will eventually be utilizing the product is critical and can seem very abstract and far away in the early stages.
+</div>
+<div class="entry span6">
+<img class="vertical-list-img" src="img/telliscope/Siteflow_Doc.png" title="Sitemap" >
+</div>
+<div class="row-fluid">
+<div class="entry span6">
+<img class="vertical-list-img" src="img/telliscope/personas.png" title="Personas" >
+<!-- whiteboard pictures, CAROUSEL -->
+</div>
+</div>
+<!-- Ideation -->
+<h3><b><a name="III">Ideation</a></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href= "#toc">↑</a> </h3>
+<div class="row-fluid">
+<div class="entry span6">
+<p>
+<h6>
+Stemming from some inspiration I goaded from the client, I began creating some logo designs to kickstart the rest of the prototype. The Fibonacci sequence was referred to, as well as the letter T and circular forms. So I began with logos with rotational symmetry, and created some further iterations with a blue color that would become the main theme. Some reactions to the far southeastern logo was that it was too engineering like, or resembled a thunderstrike. Certainly not what I had intended, so we iterated for the 7th time and it worked like a charm. Eventually we settled on an actual telliscope encircled representing a capital T and the actual object itself. People's first impressions of the final logo was clear, direct, and obvious. All things that worked for the brand, and had the added benefit of being recognizable in other marketing material formats. </h6>
+</p>
+</div>
+<div class="row-fluid">
+<div class="entry span6">
+<img class="vertical-list-img" src="img/telliscope/logos_iterations.png" title="Logos" >
+<!-- whiteboard pictures, CAROUSEL -->
+</div>
+</div>
+<!-- <div class="fullwidth-wrap top-space-80-in bottom-space-80-in fullwidth-text-white bottom-space-40 ">
+<div class="parallax" data-ratio="0.2"><img class="parallax-img" width="100%" height= "50%" src="img/telliscope/logos_iterations.png" title="Logos Iterations" ></div>
+</div>
+</div> -->
+<div class="row-fluid">
+<div class="entry span12">
+<img class="vertical-list-img" src="img/telliscope/screenshots.png" title="Screenshots" >
+<!-- whiteboard pictures, CAROUSEL -->
+</div>
+</div>
+<!-- <div class="row-fluid">
+  <div class="fullwidth-wrap top-space-80-in bottom-space-80-in fullwidth-text-white bottom-space-40 ">
+  <div class="parallax" data-ratio="0.2"><img class="parallax-img" width="100%" height= "50%" src="img/telliscope/screenshots.png" title="Logos Iterations" ></div>
+</div> -->
+<!-- ITERATION-->
+<h3><b><a name="IV">Iteration</a></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href= "#toc">↑</a> </h3>
+<!-- end post header -->
+<div class="row-fluid">
+<div class="entry span12">
+<!-- ENTER TEXT BELOW -->
+<h6>
+We decided upon a bi-weekly video chat conference to go over new additions, and changes to the site. After converting most of the original ideas into a visible and workable prototype, the real work began. Most of the iterations were made possible by directly commenting and marking up the prototype via the UX-Pin Commenting tool. This allowed for immediate re-working of the prototype. Most instances where it was a matter of placement or styling, it was a quick fix. However having the prototype available everywhere and at anytime, allowed for more deep-rooted problems to arise when users tested it from their respective devices. Bugs and errors aside from the UX-Pin platform, I worked to compensate for all the differences in what people were seeing. <h6> <p>
+<ul><h6>
+<li>Copywriting was either too grandiose or obscured by the fact that it was in the wrong place at the wrong time.
+<li>Users were unable to identify where to input their information
+<li>Documents were normally unprepared, and therefore had to be written on the spot
+<li>Events and Announcements were too similar in appearance to distinguish their different purposes
+<li>The messages were not diverse enough in content, and were un-editable for personalized conversations
+</ul>
+</p>
+</div>
+</div>
+<div class="row-fluid">
+<div class="entry span12">
+<img class="vertical-list-img" src="img/telliscope/comments.png" title="Comments UXPIN" >
+</div>
+</div>
+<!-- TEXT FINISHED ABOVE -->
+<!--end entry-->
+<!-- end content -->
+<!-- FINALIZATION-->
+<!-- write header here -->
+<h3><b><a name="V">Finalization</a></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <a href= "#toc">↑</a> </h3>
+<!-- end post header -->
+<div class="row-fluid">
+<div class="entry span12">
+<p>
+<!-- Finalization -->
+<h6>
+As the desktop version was finalized, I then went into re-sizing the prototype accounting for three other screen resolutions (namely mobile, tablet, and laptop). Although there are automatically responsive development methods, I had to manually visualize the breakpoints at which the screens would adapt to changing frames. In most cases, the card layout was highly adaptable for the gradually narrowing screens, and where there were particularly wide and horizontal features, they were broken down into pieces or excluded particular elements in order to simplify the layouts. For form input fields, there would be a zoom effect so as to better see what one was typing. If there were grids or tables that were an odd number, then we justified the elements instead of leaving gaping holes.
+
+The design was well received by many of the early testees, and were surprised by the evolution of the design from the previous versions that were presented to them. The overall consensus was that it was sleeker, information was easier to find and recollect, and the site seemed more alive and realistic. The interactions were received better than I thought, and were intuitive enough to be used without any explanation beforehand. Expanding tabs and hover treatments were welcomed as part of the user's learned vocabulary.
+
+Among the things I wish I could have improved were the speed and turnover rate, the number of user tests, and developer feedback. Given that this was a scrappy startup team, I wore many hats and created many visual artifacts, this may have detracted from more strategic design thinking. Working with developers and data scientists from the start would have been beneficial, and relying on the mangerial foresight of the client was overlooked. There were instances where I believe that I should have pushed back and held my ground, so that I could remain invested and challenged.
+
+I learned that one should really truly believe in the project till the end, and that being driven by one's own satisfaction is more important than the client's satisfaction when it comes to attaining perfection.
+<p>
+</div>
+</div>
+<div class="row-fluid">
+<div class="entry span12">
+<img class="vertical-list-img" src="img/telliscope/responsive.png" title="Mobile Mockup" >
+</div>
+</div>
+<center><h1> <a href= "https://www.telliscope.com/">Check out the live beta-site</a> </h4></center>
+
+<div class="row-fluid">
+<div class="entry span6">
+<img class="vertical-list-img" src="img/telliscope/style_guide.png" title="Style Guide" >
+</div>
+<div class="entry span6">
+<img class="vertical-list-img" src="img/telliscope/infographic.png" title="Infographic" >
+</div>
+</div>
+<!-- TEXT FINISHED ABOVE -->
+</p>
+</h6>
+<div class="container">
+    <div class="row-fluid">
+        <div class="span4 moudle">
+            <section class="infrographic bignumber ux-mod-nobg">
+                <div class="bignumber-item theme-color-4"
+                    data-digit="876">876</div>
+                <h1 class="infrographic-tit">Comments</h1>
+                <p class="infrographic-subtit">made and resolved</p>
+            </section>
+            <!--End infrographic bignumber-->
+        </div>
+        <div class="span4 moudle">
+            <section class="infrographic bignumber ux-mod-nobg">
+                <div class="bignumber-item theme-color-7" data-digit="469">61</div>
+                <h1 class="infrographic-tit">Pages</h1>
+                <p class="infrographic-subtit">in the entire sitemap</p>
+            </section>
+            <!--End infrographic bignumber-->
+        </div>
+        <div class="span4 moudle">
+            <section class="infrographic bignumber ux-mod-nobg">
+                <div class="bignumber-item theme-color-5" data-digit="899">20</div>
+                <h1 class="infrographic-tit">Meetings</h1>
+                <p class="infrographic-subtit">both in person and over video chat</p>
+            </section>
+            <!--End infrographic bignumber-->
+        </div>
+
+    </div>
+</div>
+<div class="fullwrap_moudle">
+<div class="row-fluid">
+<div class="fullwidth-wrap top-space-80-in bottom-space-40-in fullwidth-text-white bottom-space-40 ">
+<div class="parallax" data-ratio="0.2"><img class="parallax-img" width="100%" src="img/telliscope/backdrop.jpg"></div>
+<div class="container">
+<div class="row-fluid">
+<div class="span3 moudle bottom-space-40 ">
+<div data-post="20140404-035001-273-16"
+class="text_block withbg bg-theme-color-1">
+<a name="20140404-035001-273-16"
+class="20140404-035001-273-16"></a>
+<p>
+<span class="dropcap">"O</span>ne of the most important resources to entrepreneurs is connection. And, when it comes to connecting business owners, Telliscope is a game changer in bringing together different sectors with relevant data. Real time information is pertinent to my line of business and will be efficiently handled by this revolutionary platform!" - <h6>Michael L. Berhanu, Rose Garden PLC</h6>
+</p>
+</div>
+</div>
+<div class="span3 moudle bottom-space-40 ">
+<div data-post="20140404-035001-273-16"
+class="text_block withbg bg-theme-color-5">
+<a name="20140404-035001-273-16"
+class="20140404-035001-273-16"></a>
+<p>
+<span class="dropcap">“T</span>his digital platform will be very beneficial to my team in staying up to date on current business market trends and continuously improving with a fresh point of view. I believe Telliscope to be an effective tool to businesses and encouraging us to try new tools and approaches." - <h6>Eyob Alemayehu, Yisakal Entertainment</h6>
+</p>
+</div>
+</div>
+<div class="span3 moudle bottom-space-40 ">
+<div data-post="20140404-035001-976-17"
+class="text_block withbg bg-theme-color-4">
+<a name="20140404-035001-976-17"
+class="20140404-035001-976-17"></a>
+<p>
+<span class="dropcap">“I</span>n Addis, opportunities are to be fought for. As an entrepreneur, information is a crucial ingredient in my company’s daily activities. Because of Telliscope’s service, I will be able to get the information I need, when I need it!!" -<h6>Seminas Hadera, Systron Advertising PLC</h6>
+</p>
+</div>
+</div>
+<div class="span3 moudle bottom-space-40 ">
+<div data-post="20140404-035001-664-18"
+class="text_block withbg bg-theme-color-7">
+<a name="20140404-035001-664-18"
+class="20140404-035001-664-18"></a>
+<p>
+<span class="dropcap">"I</span>n this digital era, where globalization is reduced to a click of a mouse, I believe Telliscope can greatly benefit entrepreneurs in Ethiopia by removing geographic limitations, connecting them with diverse group of investors, and enabling them to tap into resources to fulfill their dreams” -<h6>Solomon Kassa, TechTalk with Solomon</h6>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end content -->
+<!-- END STYLE 2 STOP COPY HERE -->
+
+<!-- MAKE SURE ALL CONTENT IS ABOVE THIS LINE -->
+</div> <!-- center div-->
+</div>
+
+<!--Related Posts-->
+<section class="related-post-wrap clearfix">
+<h2 class="related-post-wrap-tit">Related Posts</h2>
+<div class="row-fluid">
+<section class="related-post-unit">
+<a href="tagazu.html" title="Related Post">
+<img width="800" height="280" src="img/tagazu_related.png" class="attachment-image-thumb wp-post-image" alt="Related Post 1">
+</a>
+<h3><a href="geons.html" title="Related Post">TAGAZU </a></h3>
+<div class="related-post-caption hidden-phone">
+<p>A UX Case Study</p>
+</div>
+</section>
+<!--End relatedpost-unit-->
+<section class="related-post-unit">
+<a href="eduting.html" title="Related Post">
+<img width="800" height="480" src="img/eduting/logo.png" class="attachment-image-thumb wp-post-image" alt="Related Post 2">
+</a>
+<h3><a href="eduting.html" title="Related Post">EDUTING</a></h3>
+<div class="related-post-caption hidden-phone">
+<p>Alpha Site</p>
+</div>
+</section>
+<!--End relatedpost-unit-->
+<section class="related-post-unit">
+<a href="dataviz.html" title="Related Post">
+<img width="800" height="480" src="img/nodegraph.png" class="attachment-image-thumb wp-post-image" alt="Related Post 3">
+</a>
+<h3><a href="dataviz.html" title="Related Post">DATA VIZ</a></h3>
+<div class="related-post-caption hidden-phone">
+<p>A data visualization of wikipedia articles</p>
+</div>
+</section>
+<!--End relatedpost-unit-->
+<section class="related-post-unit">
+<a href="encircled.html" title="Related Post">
+<img width="800" height="480" src="img/encircled_related.gif" class="attachment-image-thumb wp-post-image" alt="Related Post 4">
+</a>
+<h3><a href="encircled.html" title="Related Post">ENCIRCLED</a></h3>
+<div class="related-post-caption hidden-phone"></div>
+</section>
+<!--End relatedpost-unit-->
+</div>
+<!--end row-fluid-->
+</section>
+<!--End related-post-wrap-->
+
+<!--COMMENTS-->
+<div class="container comment-wrap">
+    <div id="comments">
+        <div id="respondwrap">
+            <div id="respond" class="comment-respond">
+                <h3 id="reply-title" class="comment-reply-title"><span class="comm-reply-title">LEAVE A COMMENT</span> <small><a rel="nofollow" id="cancel-comment-reply-link" href="/aside/2014/03/26/portfolio-post-with-vertical-list/#respond" style="display:none;">CANCEL REPLY</a></small></h3>
+                <form action="http://ximudesign.com/aside/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                    <p class="span6">
+                        <input id="author" name="author" type="text" class="requiredFieldcomm" value="NAME" size="30" aria-required="true" tabindex="1" onfocus="if(this.value=='NAME'){this.value='';}" onblur="if(this.value==''){this.value='NAME';}">
+                    </p>
+                    <p class="span6">
+                        <input id="email" name="email" type="text" class="email requiredFieldcomm" value="EMAIL" size="30" aria-required="true" tabindex="2" onfocus="if(this.value=='EMAIL'){this.value='';}" onblur="if(this.value==''){this.value='EMAIL';}">
+                    </p>
+                    <p>
+                        <textarea id="comment" name="comment" class="requiredFieldcomm" cols="100%" tabindex="4" aria-required="true" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}">YOU REVIEW</textarea>
+                    </p>
+                    <p class="form-submit">
+                        <input name="submit" type="submit" id="submit" value="SEND">
+                        <input type="hidden" name="comment_post_ID" value="8" id="comment_post_ID">
+                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                    </p>
+                </form>
+            </div><!-- #respond -->
+        </div>
+    </div>
+    <!-- #comments -->
+</div>
+</div>
+<!--end row-fluid-->
+</div>
+<!--end gallery-images-wrap -->
+</div>
+<!--end row-fluid gallery-wrap-->
+</div>
+<!--end content_wrap-->
+</div>
+<!--end row-fluid-->
+</div>
+<!--end content-->
+</div>
+<!--End #main-->
+</div>
+<!--End #main-wrap-->
+<div id="hot-close-sidebar-touch"></div>
+</div><!--End #wrap-->
+<div id="float-bar" class="hidden-phone">
+<div class="float-bar-inn-wrap">
+<div class="float-bar-inn">
+<!--Social network share icon-->
+<div class="float-bar-social-share">
+<button class="social-share-facebook" onclick="javascript:window.open('http://www.facebook.com/share.php?u=http://akinhwan.com','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-facebook"></i></button>
+
+<button class="social-share-twitter" onclick="javascript:window.open('https://twitter.com/share?url=http://akinhwan.com','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-twitter"></i></button>
+
+<button class="social-share-google-plus" onclick="javascript:window.open('https://plus.google.com/share?url=http://akinhwan.com','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-google-plus"></i></button>
+
+<button class="social-share-pinterest" onclick="javascript:window.open('http://pinterest.com/pin/create/bookmarklet/?url=http://akinhwan.com&amp;is_video=false&amp;media=','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-pinterest"></i></button>
+
+<button class="social-share-linkedin" onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=http://akinhwan.com','', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><i class="fa fa-linkedin"></i></button>
+
+</div>
+</div>
+<!--End float inn wrap-->
+</div><!--End float inn-->
+<div id="float-bar-triggler"><i class="float-bar-triggler-inn"></i></div>
+</div>
+<!--End #float bar-->
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+<script type="text/javascript" src="./js/waypoints.min.js"></script>
+<script type="text/javascript" src="./js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="./js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="./js/jquery.gray.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/custom.theme.isotope.js"></script>
+<script type="text/javascript" src="./js/custom.theme.js"></script>
+<script type="text/javascript" src="./js/theme.pagebuilder.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+var ux_pb = new ThemePageBuilder();
+ux_pb.init();
+});
+</script>
+</body>
+</html>
