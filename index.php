@@ -130,16 +130,15 @@
             <form role="form" method="post"  action="/post.php" id="feedbackForm" class="text-center">
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                <input style="text-align: center;" type="text" class="form-control" id="name" name="name" placeholder="Name">
                 <span class="help-block" style="display: none;">Please enter your name.</span></div>
               <div class="form-group">
                 <label for="email">Phone<br>
-                </label><input type="text
-                " class="form-control" id="Phone" name="Phone" placeholder="( optional )">
+                </label><input type="text" style="text-align: center;" class="form-control" id="Phone" name="Phone" placeholder="( optional )">
               <div class="form-group">
                 <label for="message">Message</label>
 				
-                <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message"></textarea>
+                <textarea rows="10" style="text-align: center;" cols="100" class="form-control" id="message" name="message" placeholder="Message"></textarea>
               <button type="submit" value="Submit Your Details" id="feedbackSubmit" class="btn btn-primary btn-lg" style=" margin-top: 10px;"> Send</button>
             </form>
             <!-- END CONTACT FORM --> 
@@ -170,6 +169,10 @@
 <script src="js/jquery-1.11.3.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+
+
+
+
 </body>
 
 </html>
